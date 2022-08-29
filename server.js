@@ -6,7 +6,7 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-	res.render('index');
+	res.render('certificate');
 })
 
 app.get('/member/:name/ID/:id', (req, res) => {
@@ -15,6 +15,16 @@ app.get('/member/:name/ID/:id', (req, res) => {
 		id: req.params.id
 	}
 	res.render('member', memberDetails);
+});
+
+app.get('/certificate', (req, res) => {
+	const certificateDetails = {
+		name: "Deshan Charuka",
+		marks: "77",
+		date:new Date().toJSON().slice(0,10).split('-').reverse().join('/') ,
+		issuedPerson:"Aruna Wijerathna"
+	}
+	res.render('certificate', certificateDetails);
 });
 
 app.get('*', (req, res, next) => {
