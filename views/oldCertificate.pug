@@ -1,0 +1,54 @@
+head
+  style(type='text/css').
+    body, html {
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    color: black;
+    display: table;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    text-align: center;
+    }
+    .container {
+    border: 20px solid khaki;
+    width: 750px;
+    height: 563px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding:20px;
+    }
+    .logo {
+    color: #000;
+    }
+    .marquee {
+    color: #000;
+    font-size: 48px;
+    margin: 20px;
+    }
+    .assignment {
+    margin: 20px;
+    }
+    .person {
+    border-bottom: 2px solid black;
+    font-size: 32px;
+    font-style: italic;
+    margin: 20px auto;
+    width: 400px;
+    }
+    .reason {
+    margin: 20px;
+    }
+.container
+  .logo
+    | Champsoft (PVT) Ltd - Sri Lanka
+  .marquee
+    | Certificate of Completion
+  .assignment
+    | This certificate is presented to
+  .person
+    | #{name}
+  .reason
+    | #{subject}
