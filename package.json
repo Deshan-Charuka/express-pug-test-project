@@ -1,0 +1,27 @@
+{
+  "name": "express-pug-example",
+  "version": "1.0.0",
+  "description": "This is a simple test with Express.js and Pug",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deshan-Charuka/express-pug-test-project.git"
+  },
+  "keywords": [
+    "Express.js",
+    "Pug"
+  ],
+  "author": "Deshan Charuka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deshan-Charuka/express-pug-test-project/issues"
+  },
+  "homepage": "https://github.com/Deshan-Charuka/express-pug-test-project#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
