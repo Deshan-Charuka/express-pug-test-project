@@ -6,7 +6,7 @@ app.set("views", "./views");
 app.set("view engine", "pug");
 
 app.get("/", (req, res) => {
-  res.render("certificate");
+  res.status(200).send("Express + Pug")
 });
 
 app.get("/member/:name/ID/:id", (req, res) => {
